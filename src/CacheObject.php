@@ -36,17 +36,19 @@ class CacheObject extends ObjectBase
 
     /**
      * @param string $key
+     * @param null|mixed $defaultValue
      * @return mixed
      */
-    public function get($key)
+    public function get($key, $defaultValue= null)
     {
-        if($this->isInCache($key))
+        if($this->exists($key))
             return $this->cache[$key];
+        return $defaultValue;
     }
 
     /**
      * @param string $key
-     * @param mixed $value
+     * @param null|mixed $value
      * @return $this
      */
     public function set($key, $value= null)
@@ -55,12 +57,5 @@ class CacheObject extends ObjectBase
         return $this;
     }
 
-    /**
-     * @param string $key
-     * @return boolean
-     */
-    private function isInCache($key)
-    {
-        return array_has($this->cache, $key);
-    }
+
 }

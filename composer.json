@@ -1,0 +1,27 @@
+{
+    "name": "oscarricardosan/cache_object",
+    "description": "Small package for handling cache in code block and not having to use session and avoid 'array_has' or the like.",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "oscarricardosan",
+            "email": "oscarricardosan@gmail.com"
+        }
+    ],
+    "require": {
+    },
+    "require-dev": {
+    },
+    "autoload": {
+        "psr-4": {
+            "Oscarricardosan\\CacheObject\\": "src"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Oscarricardosan\\CacheObject\\Tests\\": "tests"
+        }
+    },
+    "minimum-stability": "dev",
+    "prefer-stable" : true
+}

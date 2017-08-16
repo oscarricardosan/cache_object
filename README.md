@@ -1,3 +1,5 @@
+Agnostic php package.
+
 Small package for handling cache in code block and not having to use session and avoid `array_has` or the like.
 
 ```php

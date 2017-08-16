@@ -3,9 +3,7 @@
 namespace Oscarricardosan\CacheObject;
 
 
-use App\Objects\ObjectBase;
-
-class CacheObject extends ObjectBase
+class CacheObject
 {
     protected $cache= [];
 

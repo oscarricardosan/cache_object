@@ -29,7 +29,7 @@ class CacheObject
      */
     public function exists($key)
     {
-        return in_array($key, $this->cache);
+        return array_key_exists($key, $this->cache);
     }
 
     /**

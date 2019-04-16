@@ -60,7 +60,7 @@ print_r($product->getTomatoProduct());
 
 ```
 
-Método "getOrSet", recibe como parametros el key a obtener y si este no existe en el cache ejecuta el segundo parametro el cual debe ser una función. Funciona para evitar tener que usar un "if($productCache->exists('tomato'))"
+Method "getOrSet", receives as parameters the key to obtain and if it does not exist it executes the second parameter which must be a function. It works to avoid having to use an "if ($ productCache-> exists ('tomato'))"
 
 
 

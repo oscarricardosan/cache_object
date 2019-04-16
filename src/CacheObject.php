@@ -55,5 +55,18 @@ class CacheObject
         return $this;
     }
 
+    /**
+     * @param string $key
+     * @param $callback
+     * @return mixed
+     */
+    public function getOrSet($key, $callback)
+    {
+        if(!$this->exists($key))
+           $this->set($key, $callback());
+
+        return $this->get($key);
+    }
+
 
 }

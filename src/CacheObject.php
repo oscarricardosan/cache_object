@@ -68,5 +68,13 @@ class CacheObject
         return $this->get($key);
     }
 
+    /**
+     * @return mixed
+     */
+    public function getAllCache()
+    {
+        return $this->cache;
+    }
+
 
 }
